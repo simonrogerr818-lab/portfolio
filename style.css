@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Funnel Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* --------------------------NAVBAR--------------------------- */
+header nav {
+    z-index: 1000;
+    overflow:hidden;
+    background-color: #fffae1;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 15px #2e2e2e;
+}
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+
+#logo {
+    font-family: "DM Serif Text", serif;
+    font-weight: bold;
+    float: left;
+}
+
+/* --------------------------présentation & mainImage-------------------------------- */
+#mainImage {
+    padding-top: 60px;
+    background: url(CV\ &\ photos/mainImage.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+h1 {
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+    color: #fffae1;
+    font-size: 6em;
+    margin-top: 150px;
+    text-shadow: 1px 2px #000000;
+}
+#firstLine {
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #fffae1;
+    box-shadow: 1px 2px #000000;
+}
+h3 {
+    text-align: center;
+    margin-top: 100px;
+    color: #fffae1;
+    font-size: 2em;
+    text-shadow: 1px 2px #000000;
+    font-weight: 100;
+}
+#presentation {
+    background-color: #fffae1;
+    padding: 10px 0px 100px 0;
+}
+h2 {
+    font-size: 2em;
+    font-family: "DM Serif Text", serif;
+}
+#textIntro {
+    padding: 0px 10%;
+    font-size: 2em;
+}
+#resumes {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    text-align: center;
+}
+
+#resumes img{
+    height: auto;
+    width: 90%;
+}
+.resumeCom h4 {
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 15px;
+}
+.resumeAts h4 {
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 15px;
+}
+.resumeCom img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #2e2e2e;
+}
+.resumeAts img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #2e2e2e;
+
+}
+.resumeCom img:hover {
+    transform: scale(1.01);
+    transition: 0.5 ease-in-out
+}
+.resumeAts img:hover {
+    transform: scale(1.01);
+    transition: 0.5 ease-in-out
+}
+
+
+/* ---------------------------------FOOTER--------------------------------- */
+footer {
+    background: #000000;
+    color: #fffae1;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+#sendAmessage {
+    font-size: 2em;
+    font-family: "DM Serif Text", serif;
+    margin: 50px 0;
+}
+form {
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 2px 0;
+    font-size: 1.2em;
+    font-family: "Funnel Sans", sans-serif;
+    border-radius: 10px;
+}
+textarea {
+    height: 120px;
+}
+button {
+    color: #c8c8c8;
+    font-size: 1.5em;
+    background-color: #2859c2;
+    margin: 50px;
+}
+button:hover {
+background-color: #004ef8;
+color: #fffae1;
+cursor: pointer;
+transition: 0,3 ease-in-out;
+}
+#secondLine {
+   height: 1px;
+    width: 35%;
+    margin: 50px auto;
+    margin-bottom: 100px;
+    background-color: #fffae1;
+    box-shadow: 1px 2px #000000;
+}
+#copyrightEtIcons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+
+}
+#copyright {
+    width: 50%;
+    text-align: left;
+    color: #fffae1;
+}
+/*--------------------ICONS----------------------- */
+#socialIcons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon i {
+    width: 80px;
+    height: 80px;
+    line-height: 80px; /* CORRECTION : doit être égal à height pour centrer verticalement */
+    border-radius: 50%;
+    text-align: center;
+    /* margin-top: 20px; SUPPRIMÉ : ce margin décalait les icônes */
+}
+
+/* Style pour LinkedIn */
+.social-icon:first-child i {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.social-icon:first-child:hover i {
+    background-color: #0077b5;
+    color: white;
+}
+
+/* Style pour GitHub */
+.social-icon:last-child i {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.social-icon:last-child:hover i {
+    background-color: #333;
+    color: white;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
